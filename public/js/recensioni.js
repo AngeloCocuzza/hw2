@@ -2,7 +2,7 @@
 addReview();
 
 function addReview() {
-  fetch('/recensioni/load').then(onCommento).then(onJCommento);
+  fetch('commento.php').then(onCommento).then(onJCommento);
 }
 
 function onCommento(response) {
@@ -106,4 +106,5 @@ function onJCommento(json) {
     }
     const menu = document.querySelector('#menu');
     menu.addEventListener('click',openMenu);
+    
     
