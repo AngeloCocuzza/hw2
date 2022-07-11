@@ -15,7 +15,7 @@
         <form name='login' method='post'>
             @csrf
             <div class='email'>
-                <div><input type="text" name='email' placeholder="Email" value= "{{ old('email') }}"></div>
+                <div><input type="text" name='email' placeholder="Email" ></div>
             </div>
             <div class="password">
                 <div><input type='password' name='password' placeholder="Password"></div>
