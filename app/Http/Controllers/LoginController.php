@@ -23,8 +23,8 @@ class LoginController extends Controller {
         }
         else {
             $error='';
-            /*$old_email = Request::old('email');*/
-            return view('login')/*->with("old_email", $old_email)*/->with("error", $error);
+           
+            return view('login')->with("error", $error);
         }
     }
 
